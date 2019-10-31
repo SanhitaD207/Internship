@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+    <feature version="0.0.0">
+        <feature prerequisite="false" dependency="false">wrap</feature>
+        <bundle>mvn:io.kamon/kamon-jmx_2.11/0.6.6</bundle>
+    </feature>
+</features>

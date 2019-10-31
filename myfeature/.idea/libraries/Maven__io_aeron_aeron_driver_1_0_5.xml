@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.aeron:aeron-driver:1.0.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/aeron/aeron-driver/1.0.5/aeron-driver-1.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/aeron/aeron-driver/1.0.5/aeron-driver-1.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/aeron/aeron-driver/1.0.5/aeron-driver-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

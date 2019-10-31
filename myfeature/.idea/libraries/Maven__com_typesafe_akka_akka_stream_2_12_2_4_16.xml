@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.typesafe.akka:akka-stream_2.12:2.4.16">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/com/typesafe/akka/akka-stream_2.12/2.4.16/akka-stream_2.12-2.4.16.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/com/typesafe/akka/akka-stream_2.12/2.4.16/akka-stream_2.12-2.4.16-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/com/typesafe/akka/akka-stream_2.12/2.4.16/akka-stream_2.12-2.4.16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

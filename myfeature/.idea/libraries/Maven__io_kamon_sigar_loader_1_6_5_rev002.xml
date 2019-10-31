@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.kamon:sigar-loader:1.6.5-rev002">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/kamon/sigar-loader/1.6.5-rev002/sigar-loader-1.6.5-rev002.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/kamon/sigar-loader/1.6.5-rev002/sigar-loader-1.6.5-rev002-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/kamon/sigar-loader/1.6.5-rev002/sigar-loader-1.6.5-rev002-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

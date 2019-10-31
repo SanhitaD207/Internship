@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.kamon:kamon-core_2.12:0.6.7-HEAD">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/kamon/kamon-core_2.12/0.6.7-HEAD/kamon-core_2.12-0.6.7-HEAD.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/kamon/kamon-core_2.12/0.6.7-HEAD/kamon-core_2.12-0.6.7-HEAD-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Localm2/repository/io/kamon/kamon-core_2.12/0.6.7-HEAD/kamon-core_2.12-0.6.7-HEAD-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

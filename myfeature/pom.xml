@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!--
+        Licensed to the Apache Software Foundation (ASF) under one or more
+        contributor license agreements.  See the NOTICE file distributed with
+        this work for additional information regarding copyright ownership.
+        The ASF licenses this file to You under the Apache License, Version 2.0
+        (the "License"); you may not use this file except in compliance with
+        the License.  You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+    -->
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ericsson.feature</groupId>
+    <artifactId>myfeature</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>feature</packaging>
+
+    <name>myfeature-feature</name>
+    <description>myfeature details</description>
+
+    <properties>
+        <maven-bundle-plugin.version>3.2.0</maven-bundle-plugin.version>
+        <osgi.version>6.0.0</osgi.version>
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.12.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang.modules</groupId>
+            <artifactId>scala-java8-compat_2.12</artifactId>
+            <version>0.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor_2.12</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-slf4j_2.12</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-osgi_2.12</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.uncommons.maths</groupId>
+            <artifactId>uncommons-maths</artifactId>
+            <version>1.2.2a</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-protobuf_2.11</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
+            <version>3.10.6.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-remote_2.11</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-stream_2.12</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.reactivestreams</groupId>
+            <artifactId>reactive-streams</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>ssl-config-core_2.11</artifactId>
+            <version>0.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang.modules</groupId>
+            <artifactId>scala-parser-combinators_2.11</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.aeron</groupId>
+            <artifactId>aeron-driver</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.aeron</groupId>
+            <artifactId>aeron-client</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.agrona</groupId>
+            <artifactId>Agrona</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-cluster_2.11</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-distributed-data-experimental_2.11</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.lmdbjava</groupId>
+            <artifactId>lmdbjava</artifactId>
+            <version>0.0.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.jnr</groupId>
+            <artifactId>jnr-ffi</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.jnr</groupId>
+            <artifactId>jffi</artifactId>
+            <version>1.2.11</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>5.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-commons</artifactId>
+            <version>5.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-analysis</artifactId>
+            <version>5.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-tree</artifactId>
+            <version>5.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-util</artifactId>
+            <version>5.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.jnr</groupId>
+            <artifactId>jnr-x86asm</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.jnr</groupId>
+            <artifactId>jnr-constants</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jakewharton.byteunits</groupId>
+            <artifactId>byteunits</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.iq80.leveldb</groupId>
+            <artifactId>leveldb</artifactId>
+            <version>0.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.iq80.leveldb</groupId>
+            <artifactId>leveldb-api</artifactId>
+            <version>0.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.fusesource.leveldbjni</groupId>
+            <artifactId>leveldbjni-all</artifactId>
+            <version>1.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-persistence_2.11</artifactId>
+            <version>2.4.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-core_2.12</artifactId>
+            <version>0.6.7-HEAD</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-akka_2.11</artifactId>
+            <version>0.6.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-akka-remote_2.11</artifactId>
+            <version>0.6.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-scala_2.12</artifactId>
+            <version>0.6.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.20</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.22</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hdrhistogram</groupId>
+            <artifactId>HdrHistogram</artifactId>
+            <version>2.1.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-autoweave_2.12</artifactId>
+            <version>0.6.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.5.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.8.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjtools</artifactId>
+            <version>1.8.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-jmx_2.11</artifactId>
+            <version>0.6.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-system-metrics_2.12</artifactId>
+            <version>0.6.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-statsd_2.12</artifactId>
+            <version>0.6.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.kamon</groupId>
+            <artifactId>kamon-log-reporter_2.12</artifactId>
+            <version>0.6.6</version>
+        </dependency>
+
+
+
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>typesafe</id>
+            <name>Typesafe Repository</name>
+            <url>http://repo.typesafe.com/typesafe/releases/</url>
+        </repository>
+
+        <repository>
+            <id>akka-snapshots</id>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <url>http://repo.akka.io/snapshots/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.karaf.tooling</groupId>
+                    <artifactId>karaf-maven-plugin</artifactId>
+                    <version>4.0.4</version>
+                    <extensions>true</extensions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.karaf.tooling</groupId>
+                <artifactId>karaf-maven-plugin</artifactId>
+
+                <configuration>
+                    <startLevel>50</startLevel>
+                    <aggregateFeatures>true</aggregateFeatures>
+                    <resolver>(obr)</resolver>
+                    <checkDependencyChange>true</checkDependencyChange>
+                    <failOnDependencyChange>false</failOnDependencyChange>
+                    <logDependencyChanges>true</logDependencyChanges>
+                    <overwriteChangedDependencies>true</overwriteChangedDependencies>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
